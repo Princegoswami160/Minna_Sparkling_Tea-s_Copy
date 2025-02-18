@@ -62,28 +62,30 @@
     height: 40px;
     width: 150px;
     position: fixed;
-    margin: 40px 0 0 50px;
+    margin-top: 40px;
+    margin-left: 50px;
 }
 
 #span1, #span2, #span3 {
     position: fixed;
     font-size: 20px;
+    margin-top: 35px;
     color: darkgreen;
     text-decoration: none !important;
 }
 
-#span1 { margin-top: 35px; margin-left: 10%; }
-#span2 { margin-top: 35px; margin-left: 20%; }
-#span3 { margin-top: 35px; margin-left: 30%; }
+#span1 { margin-left: 420px; }
+#span2 { margin-left: 790px; }
+#span3 { margin-left: 1177px; }
 
 #info, #info1, #p1, #p2, #p3, #p4 {
     position: fixed;
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-size: 2rem; /* Use rem for better scaling */
-    width: 80%; /* Use percentage for width */
-    left: 10%; /* Centering */
+    font-size: 70px;
+    margin-left: 35%;
+    width: 35%;
 }
 
 #info { padding-top: 12%; }
@@ -93,22 +95,23 @@
 #p3 { padding-top: 29%; }
 #p4 { padding-top: 31%; }
 
-.pinkcan1, .orangecan, .greencan {
+.pinkcan1 {
     display: block;
     position: fixed;
     height: 100%;
     width: 50%;
+    margin-left: 80px;
     padding-top: 1%;
 }
 
-.pinktext2, .orange, .orange1, .orange2 {
+#pinktext1, .pinktext2 {
     position: fixed;
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-size: 2rem; /* Use rem for better scaling */
-    left: 10%; /* Centering */
-    width: 80%; /* Use percentage for width */
+    font-size: 60px;
+    margin-left: 35%;
+    width: 35%;
 }
 
 #hr, #dp1, #dp2, #dp3, #order, #ntfact {
@@ -116,12 +119,64 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-size: 1rem; /* Use rem for better scaling */
-    left: 10%; /* Centering */
-    width: 80%; /* Use percentage for width */
+    font-size: 17px;
+    margin-left: 35%;
+    width: 37%;
+}
+
+.yellow {
+    background-color: rgb(255, 187, 0);
+    position: fixed;
+    margin-top: 7400px;
+    height: 170%;
+    width: 100%;
+}
+
+.darkgreen {
+    background-color: #d0ff00;
+    position: fixed;
+    margin-top: 8400px;
+    height: 100%;
+    width: 100%;
+}
+
+.orange, .orange1, .orange2 {
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 33px;
+    margin-left: 44.5%;
+    width: 35%;
+}
+
+#hr1, #yt1, #yt2, #yt3, #yt4, #yt5, #yt6, #yt7, #yt8, #yt9 {
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 38%;
+    width: 27%;
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #span1 { margin-left: 10%; }
+    #span2 { margin-left: 20%; }
+    #span3 { margin-left: 30%; }
+
+    #info, #info1, #p1, #p2, #p3, #p4 {
+        font-size: 50px; /* Adjust font size */
+        width: 80%; /* Adjust width */
+        margin-left: 10%; /* Centering */
+    }
+
+    .pinktext2, .orange, .orange1, .orange2 {
+        font-size: 40px; /* Adjust font size */
+    }
+}
+
 @media (max-width: 768px) {
     .logo {
         width: 100px; /* Smaller logo on mobile */
@@ -133,15 +188,13 @@
     }
 
     #info, #info1, #p1, #p2, #p3, #p4 {
-        font-size: 1.5rem; /* Smaller font size */
+        font-size: 30px; /* Smaller font size */
         width: 90%; /* Adjust width */
     }
 
     .pinktext2, .orange, .orange1, .orange2 {
-        font-size: 1.5rem; /* Smaller font size */
+        font-size: 30px; /* Smaller font size */
     }
-
-    /* Adjust other elements as needed */
 }
 
 @media (max-width: 480px) {
@@ -154,13 +207,11 @@
     }
 
     #info, #info1, #p1, #p2, #p3, #p4 {
-        font-size: 1.2rem; /* Smaller font size */
+        font-size: 24px; /* Smaller font size */
         width: 95%; /* Adjust width */
     }
 
     .pinktext2, .orange, .orange1, .orange2 {
-        font-size: 1.2rem; /* Smaller font size */
+        font-size: 24px; /* Smaller font size */
     }
-
-    /* Adjust other elements as needed */
 }
